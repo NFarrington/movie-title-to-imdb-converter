@@ -8,7 +8,24 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.card {
+  > .table-responsive > .table > tbody:first-child > tr:first-child th,
+  > .table-responsive > .table > tbody:first-child > tr:first-child td {
+    border-top: 0;
+  }
+
+  > .table-responsive > .table,
+  > .table {
+    margin-bottom: 0;
+
+    td,
+    th {
+      &:first-child {
+        padding-left: $card-spacer-x;
+      }
+      &:last-child {
+        padding-right: $card-spacer-x;
+      }
+    }
+  }
 }

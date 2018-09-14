@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'Controller@welcome');
+Route::get('/', 'Controller@dashboard')->name('dashboard');
+Route::post('search', 'Controller@search')->name('search');

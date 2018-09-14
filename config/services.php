@@ -14,6 +14,12 @@ return [
     |
     */
 
+    'omdb' => [
+        'base' => 'https://www.omdbapi.com/',
+        'key' => env('OMDB_KEY'),
+        'version' => 1,
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
